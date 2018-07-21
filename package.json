@@ -1,6 +1,6 @@
 {
   "name": "cardify2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Producto final_",
   "main": "src/app.js",
   "scripts": {
@@ -16,8 +16,6 @@
     "url": "https://github.com/Lillys21/cardify2/issues"
   },
   "homepage": "https://github.com/Lillys21/cardify2#readme",
-
-
   "dependencies": {
     "jquery": "^3.3.1",
     "npm-demo-pkg": "^2.0.0"
