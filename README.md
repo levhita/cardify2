@@ -1,4 +1,47 @@
-# Cardify
+# Cardify2
+
+#Descripción:
+¿Cómo funciona?
+
+Cardify2 es un plugin de jQuery que aplica un efecto de hover a tus imágenes envolviendolas en una etiqueta <figure></figure>, obteniendo el atributo alt e insertandolo en el texto de una etiqueta <figcaption></figcaption>. Tiene un uso rapido y practico.
+
+Instalación
+
+Global (navegador)
+.html
+<script src="lib/app.js"></script>
+Uso
+.js
+var cardify = require('cardify');
+Para que el plugin funcione primero debes inicializar tu proyecto en la terminal con el comando.
+
+npm init
+
+Descargar cardify2 desde tu terminal con el comando
+
+npm install cardify2
+
+Para que tu proyecto se vea en el navegador debes instalar Browserify de manera global en tu computadora con el siguiente comando en tu terminal
+
+npm install -g browserify
+
+Luego crea en la raíz de tu proyecto las carpetas src y dist con el archivo app.js dentro de cada una, luego ejecuta browserify de la siguiente manera para que tu js original que se encuentra en la carpeta src se guarde modificado en la carpeta dist
+
+browserify src/app.js -o dist/app.js
+
+Enlaza el archivo 'Browserificado' en tu .html
+
+<script src="dist/app.js"></script>
+
+En tu archivo .js principal pega el siguiente código
+
+var cardify = require('cardify');
+
+Finalmente, recuerda poner tus imagenes dentro de una etiqueta contenedora con clase cardify y asignarle el atributo alt como en el siguiente ejemplo.
+
+<div class='cardify'>
+   <img src='https://pbs.twimg.com/media/ClFixn2UoAA85OZ.jpg' alt='Osito'>
+</div>
 
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
@@ -50,5 +93,3 @@ $(container).cardify({});
 ```
 
 ## Ejemplos
-
-...

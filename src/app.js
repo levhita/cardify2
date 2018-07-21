@@ -1,7 +1,6 @@
 'use strict';
 
 (function($) {
-
     $.fn.cardify = () => {
 
         let searchImages = $('section').find('img'); //Busca en la seccion <section> las etiquetas img
@@ -27,7 +26,5 @@
         $(this).css('filter', 'brightness(1)');
         $('figcaption').html('');
     });
-
-
 
 }(jQuery));
