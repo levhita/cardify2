@@ -1,3 +1,3 @@
-const cardify2 =  require('');
+const cardify =  require('cardify2');
 
-console.log (cardify2(5));
+console.log (cardify(2));
