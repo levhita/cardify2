@@ -4,7 +4,7 @@ const assert  = require('assert');
 var jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 const { window } = new JSDOM();
-const { document } = (new JSDOM('<span id="test"</span>')).window;
+const { document } = (new JSDOM('<img id="test">')).window;
 global.document = document;
 var jQuery = require('jquery')(window);
 const $ = require('../src/app.js')(jQuery);
