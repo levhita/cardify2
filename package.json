@@ -1,6 +1,6 @@
 {
   "name": "cardify2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Producto final_",
   "main": "src/app.js",
   "scripts": {
