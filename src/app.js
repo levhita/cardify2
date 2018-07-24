@@ -1,30 +1,18 @@
 'use strict';
 
-(function($) {
-    $.fn.cardify = () => {
+(function ($) {
+    $.fn.cardify = function () {
+        
+        this.filter( "img" ).each(function() {
+            
+            var searchImage = $( this );
+            searchImage.wrap('<figure>');
+            var label = $('<figcaption class="alt">' + $( this ).attr('alt') + '</figcaption>');
+            searchImage.parent().append(label);
+            
+        });
 
-        let searchImages = $('section').find('img'); //Busca en la seccion <section> las etiquetas img
-
-        searchImages.wrap('<figure>'); //Con el metodo wrap envuelve las imagenes en una etiqueta figure
-
-        let label = $('<figcaption>');
-
-        $('figure').append(label);
-
+        return this;
     };
-
-    $('img').mouseover(function() {
-
-            $(this).after('<figcaption class="alt">' + $(this).attr('alt') + '</figcaption>');
-            $(this).css('filter', 'brightness(0.1)');
-
-
-    });
-
-
-    $('img').mouseout(function() {
-        $(this).css('filter', 'brightness(1)');
-        $('figcaption').html('');
-    });
-
-}(jQuery));
+ 
+})(jQuery);

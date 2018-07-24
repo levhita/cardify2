@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/Lillys21/cardify2#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
-    "npm-demo-pkg": "^2.0.0"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
